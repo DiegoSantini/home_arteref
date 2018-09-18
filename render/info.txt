@@ -1,0 +1,41 @@
+   <h2>Recent Posts</h2>
+            <ul>
+            <?php
+                $args = array( 'numberposts' => '7', 'post_type' => 'post' );
+                $recent_posts = wp_get_recent_posts($args);
+                foreach( $recent_posts as $recent ){
+                    echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+                    echo get_the_post_thumbnail( $recent["ID"], 'full');
+                }
+                wp_reset_query();
+            ?>
+            </ul>
+
+            <?php
+                $args = array( 'numberposts' => '1', 'post_type' => 'post', 'category' => 5705, );
+                $recent_posts = wp_get_recent_posts($args);
+                foreach( $recent_posts as $recent ){
+                    echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+                    echo get_the_post_thumbnail( $recent["ID"], 'medium');
+                }
+                wp_reset_query();
+            ?>
+            </ul>
+
+            <?php $posts_offset = home_arteref_get_posts_offset(); ?>
+
+                <?php foreach($posts_offset as $post){ ?>
+                <div class="home_posts_hoje">
+                    <div>
+                        <?php echo $post["post_image"]; ?>
+                        <div class="posts_hoje_caption">
+                            <spam class="post_hoje_titulo"><?php echo $post["post_title"]; ?></spam> <br>
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span class="post_hoje_data"><?php echo $post["post_date"]; ?></span>
+                            <span> - </span>
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="post_hoje_autor"><?php echo $post["post_autor"]; ?></span><br>
+                            <span class="post_hoje_comentarios"><?php echo $post["post_comentarios"]; ?></span>
+                        </div>
+                    </div>
+                <?php } ?>
