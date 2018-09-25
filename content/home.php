@@ -250,7 +250,7 @@
                     
                     
                     <div class="d-flex justify-content-start home_ar_mais_posts">
-                        <div class="ar_titulo_div">
+                        <div class="ar_titulo">
                             <span class="ar_titulo_secao">+ Posts</span>
                         </div>
                         <!--
@@ -399,7 +399,7 @@
                 <hr>                  
                 <div class="home_posts_container container">
                     <div class="d-flex justify-content-start home_ar_mais_posts">
-                        <div class="ar_titulo_div">
+                        <div class="ar_titulo">
                             <span class="ar_titulo_secao">Gente de Arte</span>
                         </div>
                         <!--

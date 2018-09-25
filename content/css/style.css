@@ -108,6 +108,7 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
+    text-decoration: none;
     background-color: rgba(0,0,0,0.8);
   }
 
@@ -251,8 +252,8 @@
 .ar_titulo_secao{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  padding: 6px;
-  font-size: 17px;
+  padding: 8px;
+  font-size: 14px;
   color: rgb(255, 255, 255);
   background-color: #0a0a0a;
 }
@@ -330,6 +331,10 @@
 }
 .ar_titulo_div{
   border-bottom: 2px solid #0a0a0a;
+  margin-bottom: 14px;
+  padding-bottom: 5px;
+}
+.ar_titulo{
   margin-bottom: 14px;
   padding-bottom: 5px;
 }
