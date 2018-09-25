@@ -1,9 +1,10 @@
 <?php
     function home_arteref(){
+        $string_legnth = 60;
         ?>  
             <div id="home_arteref_posts">
                 <div class="main_slider_container">
-                    <div class="noticias_aside">
+                    <div class="noticias_aside block_slider_coluna_1">
 
                     <?php 
                         $res = home_arteref_get_posts(5705, 1);
@@ -17,7 +18,16 @@
                                 <div id="img_ca1" class="img_categorias_banner"> <?php echo $res[0]["post_image"]; ?> </div>
                                 <!-- <img width="320" height="233" src="http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-300x233.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-300x233.jpg 300w, http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-768x597.jpg 768w, http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" /> -->
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca1"> <?php echo $res[0]["post_title"]; ?> </a> 
+                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca1"> 
+                                    <?php 
+                                    $post_title = $res[0]["post_title"];
+                                    echo substr($post_title ,0, $string_legnth);
+                                    ?>
+                                    </a>
+                                    <br>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span>Por</span>
+                                    <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -32,7 +42,15 @@
                                 </div>
                                 <div id="img_ca2" class="img_categorias_banner"> <?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca2"> <?php echo $res[0]["post_title"]; ?> </a> 
+                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca2"> 
+                                        <?php 
+                                        $post_title = $res[0]["post_title"];
+                                        echo substr($post_title ,0, $string_legnth);
+                                        ?>  </a> 
+                                        <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -63,18 +81,22 @@
                             
                             <?php foreach($destaques as $dest){ ?>
                                 <div class="arteref_home_slide arteref_home_fade">
-                                    <div class="home_img_destaque">
-                                        <?php echo $dest["post_image"]; ?> 
-                                    </div>
+                                    <a href="<?php echo $dest["post_link"]; ?>">
+                                        <div class="home_img_destaque">
+                                            <?php echo $dest["post_image"]; ?> 
+                                        </div>
 
-                                    <div class="destaque_caption">
-                                        <a href="#" class="destaque_caption_texto"> <?php echo $dest["post_title"]; ?> </a> <br>
-                                        <span class="glyphicon glyphicon-user"></span>
-                                        <span>By</span>
-                                        <span class="destaque_autor"><?php echo $dest["post_autor"]; ?></span>
-                                        <img width= "20" style="border:0;" src="<?php echo plugins_url("home-arteref/content/img/balao-de-fala.svg") ?>" alt="">
-                                        <span class="destaque_comentarios"><?php echo $dest["post_comentarios"]; ?></span>
-                                    </div>
+                                        <div class="destaque_caption">
+                                            <a href="<?php echo $dest["post_link"]; ?>" class="destaque_caption_texto">
+                                            <?php 
+                                            $post_title = $dest["post_title"];
+                                            echo substr($post_title ,0, 100);
+                                            ?> </a> <br>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span>Por</span>
+                                            <span class="destaque_autor"><?php echo $dest["post_autor"]; ?></span>
+                                        </div>
+                                    </a>
                                 </div>
                             <?php } ?>
 
@@ -83,7 +105,7 @@
                     <?php 
                         $res = home_arteref_get_posts(2768, 1);
                     ?>
-                    <div class="noticias_aside">
+                    <div class="noticias_aside block_slider_coluna_2">
                             <div>
                                 <a href="<?php echo $res[0]["post_link"]; ?>" class="link_ca3">
                                     <div class="tipo_noticia_ca1 destaque_caption_ca1_preto">
@@ -91,7 +113,15 @@
                                     </div>
                                     <div id="img_ca3" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                     <div class="destaque_caption_ca1">
-                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca3"> <?php echo $res[0]["post_title"]; ?></a> 
+                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca3"> <?php 
+                                        $post_title = $res[0]["post_title"];
+                                        echo substr($post_title ,0, $string_legnth);
+                                        ?>
+                                        </a> 
+                                        <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                     </div>
                                 </a>
                             </div>
@@ -105,7 +135,14 @@
                                     </div>
                                     <div id="img_ca4" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                     <div class="destaque_caption_ca1">
-                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca4"> <?php echo $res[0]["post_title"]; ?> </a>
+                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca4"> <?php 
+                                        $post_title = $res[0]["post_title"];
+                                        echo substr($post_title ,0, $string_legnth);
+                                        ?> </a>
+                                        <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                     </div>
                                 </a>
                             </div>
@@ -115,7 +152,7 @@
                         $res = home_arteref_get_posts(10492, 1);
                     ?>
 
-                    <div class="noticias_aside">
+                    <div class="noticias_aside block_slider_coluna_3">
                         <div>
                             <a href="<?php echo $res[0]["post_link"]; ?>" class="link_ca5">
                                 <div class="tipo_noticia_ca1 destaque_caption_ca1_rosa">
@@ -123,7 +160,15 @@
                                 </div>
                                 <div id="img_ca5" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca5">  <?php echo $res[0]["post_title"]; ?> </a>
+                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca5"> 
+                                    <?php 
+                                    $post_title = $res[0]["post_title"];
+                                    echo substr($post_title ,0, $string_legnth);
+                                    ?></a>
+                                    <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -137,7 +182,15 @@
                                 </div>
                                 <div id="img_ca6" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca6"> <?php echo $res[0]["post_title"]; ?> </a> 
+                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca6">
+                                    <?php 
+                                    $post_title = $res[0]["post_title"];
+                                    echo substr($post_title ,0, $string_legnth);
+                                    ?> </a> 
+                                    <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -145,7 +198,7 @@
                     <?php 
                         $res = home_arteref_get_posts(12631, 1);
                     ?>
-                    <div class="noticias_aside">
+                    <div class="noticias_aside block_slider_coluna_4">
                         <div>
                             <a href="<?php echo $res[0]["post_link"]; ?>" class="link_ca7">
                                 <div class="tipo_noticia_ca1 destaque_caption_ca1_rosa">
@@ -153,7 +206,15 @@
                                 </div>
                                 <div id="img_ca7" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca7"> <?php echo $res[0]["post_title"]; ?>  </a>
+                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca7"> 
+                                    <?php 
+                                    $post_title = $res[0]["post_title"];
+                                    echo substr($post_title ,0, $string_legnth);
+                                    ?> </a>
+                                    <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -167,7 +228,15 @@
                                 </div>
                                 <div id="img_ca8" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca8">  <?php echo $res[0]["post_title"]; ?>  </a> 
+                                <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca7"> <?php 
+                                    $post_title = $res[0]["post_title"];
+                                    echo substr($post_title ,0, $string_legnth);
+                                    
+                                    ?> </a>
+                                    <br>
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span>Por</span>
+                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
                                 </div>
                             </a>
                         </div>
@@ -175,49 +244,57 @@
 
                 </div>   
             </div>
-            <hr>                  
-            <div class="home_posts_container container">
-                
-                
-                <div class="d-flex justify-content-start home_ar_mais_posts">
-                    <h3 class="ar_titulo_secao">+ Posts</h3>
-                    <!--
-                    <span>< Anterior</span>
-                    <span>Próximo  > </span>
-                    -->
-                </div>
-                <?php $posts_offset = home_arteref_get_posts_offset(); ?>
+            <div class="posts_container">
+                <hr>                  
+                <div class="home_posts_container container">
+                    
+                    
+                    <div class="d-flex justify-content-start home_ar_mais_posts">
+                        <div class="ar_titulo_div">
+                            <span class="ar_titulo_secao">+ Posts</span>
+                        </div>
+                        <!--
+                        <span>< Anterior</span>
+                        <span>Próximo  > </span>
+                        -->
+                    </div>
+                    <?php $posts_offset = home_arteref_get_posts_offset(); ?>
 
-                <div class="home_posts_hoje">
+                    <div class="home_posts_hoje row">
 
-                <?php $arteref_posts_offset = home_arteref_get_posts_offset(); ?>
+                    <?php $arteref_posts_offset = home_arteref_get_posts_offset(); ?>
 
-                <?php 
-                    foreach ($arteref_posts_offset as $key ) {
-                        ?>
-                            <a href="<?php echo $key["post_link"] ?>">
-                                <div>
-                                    <?php echo $key["post_image"]; ?>
-                                    <div class="posts_hoje_caption">
-                                        <spam class="post_hoje_titulo"><?php echo $key["post_title"]; ?></spam> <br>
-                                        <span class="glyphicon glyphicon-user"></span>
-                                        <span class="post_hoje_autor"><?php echo $key["post_autor"]; ?></span>
+                    <?php 
+                        foreach ($arteref_posts_offset as $key ) {
+                            ?>  
+                            <div class="col-sm-6 col-xs-12">
+                                <a href="<?php echo $key["post_link"] ?>">
+                                    <div>
+                                        <?php echo $key["post_image"]; ?>
+                                        <div class="posts_hoje_caption">
+                                            <spam class="post_hoje_titulo"><?php echo $key["post_title"]; ?></spam> <br>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span class="post_hoje_autor"><?php echo $key["post_autor"]; ?></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        <?php
-                    }
-                ?>
-               
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    ?>
+                
+                    </div>
                 </div>
-            </div>
 
-            <hr>    
+                <hr>   
+            </div> 
 
-            <div class="home_posts_categoria_page">
+            <div class="home_posts_categoria_page row">
 
-                <div class="categoria_arte_no_mundo">
-                    <h3 class="ar_titulo_secao">Arte no mundo</h3>
+                <div class="categoria_arte_no_mundo col-xs-12">
+                    <div class="ar_titulo_div">
+                        <span class="ar_titulo_secao">Arte no mundo</span>
+                    </div>
                     <div>
                         <?php $ar_arte_no_mundo = home_arteref_get_posts(5705, 4) ?> 
                         
@@ -262,8 +339,10 @@
                     </div>
                 </div>
 
-                <div class="categoria_arte_no_mundo">
-                    <h3 class="ar_titulo_secao">Opnião</h3>
+                <div class="categoria_arte_no_mundo col-xs-12">
+                    <div class="ar_titulo_div">
+                        <span class="ar_titulo_secao">Opnião</span>
+                    </div>
                     <div>
                         <?php $ar_opniao = home_arteref_get_posts(5709, 4) ?> 
                         
@@ -309,8 +388,201 @@
                 </div>
 
 
-                <div class="categoria_arte_no_mundo">
+                <div class="categoria_arte_no_mundo col-xs-12">
                     <?php if ( dynamic_sidebar('agenda') ) : else : endif; ?>
+                </div>
+
+            </div>
+
+                
+            <div class="posts_container">    
+                <hr>                  
+                <div class="home_posts_container container">
+                    <div class="d-flex justify-content-start home_ar_mais_posts">
+                        <div class="ar_titulo_div">
+                            <span class="ar_titulo_secao">Gente de Arte</span>
+                        </div>
+                        <!--
+                        <span>< Anterior</span>
+                        <span>Próximo  > </span>
+                        -->
+                    </div>
+                    <?php $posts_offset = home_arteref_get_posts_offset(); ?>
+
+                    <div class="home_posts_hoje row">
+
+                    <?php $arteref_posts = home_arteref_get_posts(5707, 4); ?>
+
+                    <?php 
+                        foreach ($arteref_posts as $key ) {
+                            ?>  
+                            <div class="col-sm-6 col-xs-12">
+                                <a href="<?php echo $key["post_link"] ?>">
+                                    <div>
+                                        <?php echo $key["post_image"]; ?>
+                                        <div class="posts_hoje_caption">
+                                            <spam class="post_hoje_titulo"><?php echo $key["post_title"]; ?></spam> <br>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span class="post_hoje_autor"><?php echo $key["post_autor"]; ?></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    ?>
+                    </div>
+                </div>
+                <hr>
+            </div>      
+            
+
+
+            <div class="home_posts_categoria_page row">
+
+                <div class="categoria_arte_no_mundo col-xs-12">
+                    <div class="ar_titulo_div">
+                        <span class="ar_titulo_secao">Arte do Dia</span>
+                    </div>
+                    <div>
+                        <?php $ar_arte_do_dia = home_arteref_get_posts(12631, 4) ?> 
+                        
+                            <div class="categoria_arte_no_mundo_principal">
+
+                                <a class="ar_titulo_secao_link" href="<?php echo $ar_arte_do_dia[0]["post_link"]; ?>">
+                                <?php echo $ar_arte_do_dia[0]["post_image"]; ?> 
+                                
+                                <div class="categoria_posts_caption">
+                                    <spam class="post_hoje_titulo"> <?php echo $ar_arte_do_dia[0]["post_title"]; ?> </spam> 
+                                    <br>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="post_hoje_autor"><?php echo $ar_arte_do_dia[0]["post_autor"]; ?></span>
+                                </div>
+                                </a>
+
+                            </div>
+                       
+
+                        <?php 
+
+                            for ($i=1; $i < sizeof($ar_arte_do_dia); $i++) { 
+                                $key = $ar_arte_do_dia[$i];
+                                ?>
+                                <div class="categorioa_drop_noticia">
+                                <a href="<?php echo $key["post_link"]; ?>">
+                                <?php echo $key["post_image"]; ?>
+                                    <div class="posts_categoria_caption">
+                                        <span><?php echo $key["post_title"]; ?></span><br>
+
+                                        <div class="categoria_drop_user">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span><?php echo $key["post_autor"]; ?></span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                </div>
+                                <?php
+                            }
+                        ?>
+                    </div>
+                </div>
+
+                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="ar_titulo_div">
+                    <span class="ar_titulo_secao">Livros</span>
+                </div>
+                    <div>
+                        <?php $ar_livros = home_arteref_get_posts(30, 4) ?> 
+                        
+                            <div class="categoria_arte_no_mundo_principal">
+
+                                <a class="ar_titulo_secao_link" href="<?php echo $ar_livros[0]["post_link"]; ?>">
+                                <?php echo $ar_livros[0]["post_image"]; ?> 
+                                
+                                <div class="categoria_posts_caption">
+                                    <spam class="post_hoje_titulo"> <?php echo $ar_livros[0]["post_title"]; ?> </spam> 
+                                    <br>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="post_hoje_autor"><?php echo $ar_livros[0]["post_autor"]; ?></span>
+                                </div>
+                                </a>
+
+                            </div>
+                       
+
+                        <?php 
+
+                            for ($i=1; $i < sizeof($ar_livros); $i++) { 
+                                $key = $ar_livros[$i];
+                                ?>
+                                <div class="categorioa_drop_noticia">
+                                <a href="<?php echo $key["post_link"]; ?>">
+                                <?php echo $key["post_image"]; ?>
+                                    <div class="posts_categoria_caption">
+                                        <span><?php echo $key["post_title"]; ?></span><br>
+
+                                        <div class="categoria_drop_user">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span><?php echo $key["post_autor"]; ?></span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                </div>
+                                <?php
+                            }
+                        ?>
+                    </div>
+                </div>
+
+
+                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="ar_titulo_div">
+                    <span class="ar_titulo_secao">Podcasts</span>
+                </div>
+                    <div>
+                        <?php $ar_exposicoes = home_arteref_get_posts(158, 4) ?> 
+                        
+                            <div class="categoria_arte_no_mundo_principal">
+
+                                <a class="ar_titulo_secao_link" href="<?php echo $ar_exposicoes[0]["post_link"]; ?>">
+                                <?php echo $ar_exposicoes[0]["post_image"]; ?> 
+                                
+                                <div class="categoria_posts_caption">
+                                    <spam class="post_hoje_titulo"> <?php echo $ar_exposicoes[0]["post_title"]; ?> </spam> 
+                                    <br>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="post_hoje_autor"><?php echo $ar_exposicoes[0]["post_autor"]; ?></span>
+                                </div>
+                                </a>
+
+                            </div>
+                       
+
+                        <?php 
+
+                            for ($i=1; $i < sizeof($ar_exposicoes); $i++) { 
+                                $key = $ar_exposicoes[$i];
+                                ?>
+                                <div class="categorioa_drop_noticia">
+                                <a href="<?php echo $key["post_link"]; ?>">
+                                <?php echo $key["post_image"]; ?>
+                                    <div class="posts_categoria_caption">
+                                        <span><?php echo $key["post_title"]; ?></span><br>
+
+                                        <div class="categoria_drop_user">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span><?php echo $key["post_autor"]; ?></span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                </div>
+                                <?php
+                            }
+                        ?>
+                    </div>
                 </div>
 
             </div>

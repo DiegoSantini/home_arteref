@@ -39,3 +39,10 @@
                         </div>
                     </div>
                 <?php } ?>
+
+               cor fundo gente de arte e +posts  #f9f9f9;
+
+
+              http://arteref.com/wp-admin/edit.php?s=&post_status=all&post_type=post&_wpnonce=85044dd65d&_wp_http_referer=%2Fwp-admin%2Fedit.php&action=-1&m=0&cat=5707&seo_filter=&readability_filter=&filter_action=Filter&paged=1&action2=-1
+
+              http://arteref.com/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=5707&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1

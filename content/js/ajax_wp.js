@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-
+/*
     get_posts_destaque = function(){
         $.ajax({
             type: "POST",
@@ -49,5 +49,7 @@ jQuery(document).ready(function($){
         get_posts_categoria(index);
     }
     */
+    /*
     window.get_posts_categoria = get_posts_categoria;
+    */
 });
