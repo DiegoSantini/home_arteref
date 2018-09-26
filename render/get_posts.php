@@ -1,6 +1,6 @@
 <?php 
     function home_arteref_get_posts($categoria, $quantidade){
-        $args = array( 'numberposts' => $quantidade, 'post_type' => 'post', 'category' => $categoria);
+        $args = array( 'numberposts' => $quantidade, 'post_type' => 'post', 'category' => $categoria, 'post_status' => 'publish');
         $recent_posts = wp_get_recent_posts($args);
 
         $resultado = array();[]; 
@@ -19,7 +19,7 @@
     }
 
     function home_arteref_get_posts_destaque(){
-        $args = array( 'numberposts' => 7, 'post_type' => 'post');
+        $args = array( 'numberposts' => 7, 'post_type' => 'post', 'post_status' => 'publish');
         $recent_posts = wp_get_recent_posts($args);
 
         $resultado = array();[]; 
@@ -41,7 +41,7 @@
     
 
     function home_arteref_get_posts_offset(){
-        $args = array( 'numberposts' => 4, 'offset' => 7, 'post_type' => 'post');
+        $args = array( 'numberposts' => 4, 'offset' => 7, 'post_type' => 'post',  'post_status' => 'publish');
         $recent_posts = wp_get_recent_posts($args);
 
         $resultado = array();[]; 
