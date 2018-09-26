@@ -20,11 +20,9 @@ require 'render/get_posts.php';
 function home_enqeue_scripts(){
     $page = get_page_by_title( 'Home' );
     if ( is_page($page->ID) ){
-        wp_enqueue_style( 'home_arteref_bootstrap', plugins_url('home-arteref/node_modules/bootstrap/dist/css/bootstrap.min.css'));
         wp_enqueue_style( 'cdn_bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
         wp_enqueue_style( 'home_arteref_style', plugins_url('home-arteref/content/css/style.css'));
         wp_enqueue_style( 'cdn_bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js','jquery', 1.4, true);
-        wp_enqueue_script('home_arteref_script_ajax', plugins_url('home-arteref/content/js/ajax_wp.js'),'jquery', 1.4, true);
         wp_enqueue_script('home_arteref_script_slider', plugins_url('home-arteref/content/js/slider.js'),'jquery', 1.4, true);
     }
 }
