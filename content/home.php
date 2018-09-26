@@ -289,9 +289,9 @@
                 <hr>   
             </div> 
 
-            <div class="home_posts_categoria_page row">
+            <div class="home_posts_categoria_page container">
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-4 col-xs-12">
                     <div class="ar_titulo_div">
                         <span class="ar_titulo_secao">Arte no mundo</span>
                     </div>
@@ -438,7 +438,7 @@
             
 
 
-            <div class="home_posts_categoria_page row">
+            <div class="home_posts_categoria_page container">
 
                 <div class="categoria_arte_no_mundo col-xs-12">
                     <div class="ar_titulo_div">

@@ -276,7 +276,7 @@
 }
 .home_posts_categoria_page{
   position: relative;
-  display: flex;
+  width: 1200px;
   justify-content: center;
 }
 .posts_categoria_caption{
@@ -349,6 +349,10 @@
   }
 }
 @media(max-width: 1220px){
+  .home_posts_categoria_page{
+    display: block;
+    width: 370px;
+  }
   .home_img_destaque{
     width: 500px;
     height: 386px;
@@ -449,9 +453,28 @@
     max-width: 307px;
     margin-left: 10px;
   }
+  .categoria_arte_no_mundo {
+    margin-left: 0px; 
+    width: 258px;
+  }
+  .categoria_posts_caption {
+    width: 228px;
+  }
+  .categorioa_drop_noticia {
+    line-height: normal;
+    font-size: 10px;
+  }
 }
 @media(max-width:436px){
   .prev, .next{
     top:45%;
+  }
+  .home_posts_categoria_page{
+    display: block;
+    width: 287px;
+  }
+  .categoria_posts_caption {
+    width: 227px;
+    font-size: 12px;
   }
 }
