@@ -28,15 +28,14 @@ function home_enqeue_scripts(){
 }
 add_action('wp_enqueue_scripts', 'home_enqeue_scripts');
 
-function home_arteref_init($home_content) {
+function home_arteref_init($content) {
     $page = get_page_by_title( 'Home' );
     if ( is_page($page->ID) ){
-        $home_content = home_arteref();
-        return $home_content;
+        return home_arteref();
     }
     else{
-        return $home_content;
+        return $content;
     }
 }
 
-add_filter('the_content', 'home_arteref_init');
+add_filter('the_content', 'home_arteref_init', 20);
