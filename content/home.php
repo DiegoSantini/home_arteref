@@ -40,6 +40,7 @@
                                 <div class="tipo_noticia_ca1 destaque_caption_ca1_amarelo">
                                     <span>Livros</span>
                                 </div>
+                                
                                 <div id="img_ca2" class="img_categorias_banner"> <?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
                                         <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca2"> 
@@ -82,6 +83,15 @@
                             <?php foreach($destaques as $dest){ ?>
                                 <div class="arteref_home_slide arteref_home_fade">
                                     <a href="<?php echo $dest["post_link"]; ?>">
+                                    
+                                    <div class="tipo_noticia_ca1 destaque_caption_ca1_preto">
+                                        <span>
+                                            <?php 
+                                                echo $dest["post_categoria"]; 
+                                            ?> 
+                                        </span>
+                                    </div>
+
                                         <div class="home_img_destaque">
                                             <?php echo $dest["post_image"]; ?> 
                                         </div>
@@ -95,6 +105,9 @@
                                             <span class="glyphicon glyphicon-user"></span>
                                             <span>Por</span>
                                             <span class="destaque_autor"><?php echo $dest["post_autor"]; ?></span>
+                                            <span>
+
+                                            </span>
                                         </div>
                                     </a>
                                 </div>

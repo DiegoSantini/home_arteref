@@ -32,9 +32,13 @@
             $res["post_autor"] = get_the_author_meta('first_name', intval($recent["post_author"])) . " " . get_the_author_meta('last_name', intval($recent["post_author"])); 
             $res["post_comentarios"] = get_comments_number($recent["ID"]);
             $res["post_image"] = get_the_post_thumbnail( $recent["ID"], 'full');
+            $res["post_categoria"] = get_the_category( $recent["ID"])[0] -> name; 
             array_push($resultado, $res);
         }
         wp_reset_query();
+
+       
+
 
         return $resultado;
     }
