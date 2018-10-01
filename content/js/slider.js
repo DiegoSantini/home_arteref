@@ -54,4 +54,37 @@ jQuery(document).ready(function($){
         contador = 6;
         show_slide(contador);
     });
+
+    //muda a cor do box categoria no destaque 
+    function config_cor(){
+        var obj_config = {
+            arte_no_mundo : 'destaque_caption_ca1_laranja',
+            livros        : 'destaque_caption_ca1_amarelo',
+            esposicoes    : 'destaque_caption_ca1_preto',
+            opniao        : 'destaque_caption_ca1_laranja',
+            curiosidades  : 'destaque_caption_ca1_rosa',
+            teatro        : 'destaque_caption_ca1_verde',
+            arte_do_sia   : 'destaque_caption_ca1_rosa',
+            gente_de_arte : 'destaque_caption_ca1_vermelho',
+            default       : 'destaque_caption_ca1_preto'
+        }
+        var destaque_texto = $('.destaque_post_categoria');
+        for (let index = 0; index < destaque_texto.length; index++) {
+            const element = destaque_texto[index];
+            var destaque_texto_child = element.childNodes[0].data;
+            
+            console.log(typeof destaque_texto_child);
+            switch (destaque_texto_child) {
+                case (destaque_texto_child == "arte do dia"):
+                    
+                console.log("pintar de azul!");
+                    break;
+            
+                default:
+                    console.log("Não pintar!");
+                    break;
+            }
+        }  
+    }
+    //config_cor();
 });

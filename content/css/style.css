@@ -190,7 +190,6 @@
   text-decoration: none;
   color: #ffffff;
   font-size: 23px;
-  
 }
 
 .destaque_caption_ca1 span{
@@ -201,6 +200,9 @@
 .destaque_caption span{
   color: #ffffff;
   font-size: 12px;
+}
+.img_categorias_banner{
+  height: 250px;
 }
 .img_categorias_banner img{
   width: 320px;
@@ -217,6 +219,7 @@
 .home_posts_hoje div{
   padding: 10px;
   max-width: 260px;
+  height: 280px;
   overflow: hidden;
   text-decoration: none;
   color: #676767;
@@ -365,6 +368,9 @@
   .destaque_caption{
     margin-top: -90px;
   }
+  .img_categorias_banner {
+    height: unset;
+}
   .img_categorias_banner img{
     width: 250px;
   }

@@ -15,7 +15,9 @@
                                     <span>Arte no mundo</span>
                                     <?php  ?>
                                 </div>
-                                <div id="img_ca1" class="img_categorias_banner"> <?php echo $res[0]["post_image"]; ?> </div>
+                                <div id="img_ca1" class="img_categorias_banner"> 
+                                    <?php echo $res[0]["post_image"]; ?> 
+                                </div>
                                 <!-- <img width="320" height="233" src="http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-300x233.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-300x233.jpg 300w, http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy-768x597.jpg 768w, http://localhost/novo_arteref/wp-content/uploads/2018/09/Elena-Gual-1-copy.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" /> -->
                                 <div class="destaque_caption_ca1">
                                     <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca1"> 
@@ -85,7 +87,7 @@
                                     <a href="<?php echo $dest["post_link"]; ?>">
                                     
                                     <div class="tipo_noticia_ca1 destaque_caption_ca1_preto">
-                                        <span>
+                                        <span class="destaque_post_categoria">
                                             <?php 
                                                 echo $dest["post_categoria"]; 
                                             ?> 
@@ -105,9 +107,6 @@
                                             <span class="glyphicon glyphicon-user"></span>
                                             <span>Por</span>
                                             <span class="destaque_autor"><?php echo $dest["post_autor"]; ?></span>
-                                            <span>
-
-                                            </span>
                                         </div>
                                     </a>
                                 </div>
