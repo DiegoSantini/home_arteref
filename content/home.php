@@ -304,7 +304,7 @@
 
             <div class="home_posts_categoria_page container">
 
-                <div class="categoria_arte_no_mundo col-4 col-xs-12">
+                <div class="categoria_arte_no_mundo col-4 col-sm-12">
                     <div class="ar_titulo_div">
                         <span class="ar_titulo_secao">Arte no mundo</span>
                     </div>
@@ -352,7 +352,7 @@
                     </div>
                 </div>
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-sm-12">
                     <div class="ar_titulo_div">
                         <span class="ar_titulo_secao">Opnião</span>
                     </div>
@@ -401,7 +401,7 @@
                 </div>
 
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-sm-12">
                     <?php if ( dynamic_sidebar('agenda') ) : else : endif; ?>
                 </div>
 
@@ -453,7 +453,7 @@
 
             <div class="home_posts_categoria_page container">
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-sm-12">
                     <div class="ar_titulo_div">
                         <span class="ar_titulo_secao">Arte do Dia</span>
                     </div>
@@ -501,7 +501,7 @@
                     </div>
                 </div>
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-sm-12">
                 <div class="ar_titulo_div">
                     <span class="ar_titulo_secao">Livros</span>
                 </div>
@@ -550,7 +550,7 @@
                 </div>
 
 
-                <div class="categoria_arte_no_mundo col-xs-12">
+                <div class="categoria_arte_no_mundo col-sm-12">
                 <div class="ar_titulo_div">
                     <span class="ar_titulo_secao">Podcasts</span>
                 </div>

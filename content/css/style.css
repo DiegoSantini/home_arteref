@@ -262,7 +262,6 @@
 
 /* categorias no corpo da página */
 .categoria_arte_no_mundo{
-  margin-left: 20px;
   width: 370px;
 }
 .categoria_arte_no_mundo_principal img{
@@ -348,11 +347,14 @@
     display: none;
   }
 }
-@media(max-width: 1220px){
-  .home_posts_categoria_page{
-    display: block;
-    width: 370px;
+
+@media(max-width: 1024px){
+  .categoria_arte_no_mundo {
+    width: 1020px;
   }
+}
+
+@media(max-width: 1220px){
   .home_img_destaque{
     width: 500px;
     height: 386px;
@@ -368,6 +370,12 @@
   }
   .destaque_caption_ca1{
     width: 249px;
+  }
+}
+
+@media(max-width: 1200px){
+  .home_posts_hoje div {
+    max-width: 210px;
   }
 }
 
@@ -406,6 +414,11 @@
     margin-right: 0px;
   }
 }
+@media(max-width:963px){
+  .home_posts_hoje div {
+    max-width: 180px;
+  }
+}
 @media(max-width:869px){
   .next{
     margin-right: 0px;
@@ -417,6 +430,11 @@
   .home_posts_hoje {
     display: block;
 }
+}
+@media only screen and (width:768px){
+  .categoria_arte_no_mundo {
+    width: 620px;
+  }
 }
 @media(max-width:699px){
     .prev, .next{
@@ -453,10 +471,6 @@
     max-width: 307px;
     margin-left: 10px;
   }
-  .categoria_arte_no_mundo {
-    margin-left: 0px; 
-    width: 258px;
-  }
   .categoria_posts_caption {
     width: 228px;
   }
@@ -476,5 +490,8 @@
   .categoria_posts_caption {
     width: 227px;
     font-size: 12px;
+  }
+  .categoria_arte_no_mundo {
+    width: 258px;
   }
 }
