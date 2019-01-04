@@ -52,7 +52,8 @@
                                         <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca2"> 
                                         <?php 
                                         $post_title = $res[0]["post_title"];
-                                        echo substr($post_title ,0, $string_legnth);
+                                        //echo substr($post_title ,0, $string_legnth);
+                                        echo $post_title;
                                         ?>  </a> 
                                         <!--
 
@@ -110,8 +111,10 @@
                                             <a href="<?php echo $dest["post_link"]; ?>" class="destaque_caption_texto">
                                             <?php 
                                             $post_title = $dest["post_title"];
-                                            echo substr($post_title ,0, 100);
-                                            ?> </a> 
+                                            //echo substr($post_title ,0, 100);
+                                            echo $post_title;
+                                            ?> 
+                                            </a> 
                                             <!--
                                             <br>
                                             <span class="glyphicon glyphicon-user"></span>
@@ -138,7 +141,8 @@
                                     <div class="destaque_caption_ca1">
                                         <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca3"> <?php 
                                         $post_title = $res[0]["post_title"];
-                                        echo substr($post_title ,0, $string_legnth);
+                                        //echo substr($post_title ,0, $string_legnth);
+                                        echo $post_title;
                                         ?>
                                         </a> 
                                         <!--
@@ -162,7 +166,8 @@
                                     <div class="destaque_caption_ca1">
                                         <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca4"> <?php 
                                         $post_title = $res[0]["post_title"];
-                                        echo substr($post_title ,0, $string_legnth);
+                                        //echo substr($post_title ,0, $string_legnth);
+                                        echo $post_title;
                                         ?> </a>
                                         <!--
                                         <br>
@@ -190,7 +195,8 @@
                                     <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca5"> 
                                     <?php 
                                     $post_title = $res[0]["post_title"];
-                                    echo substr($post_title ,0, $string_legnth);
+                                    //echo substr($post_title ,0, $string_legnth);
+                                    echo $post_title;
                                     ?></a>
                                     <!--
                                     <br>
@@ -211,11 +217,15 @@
                                 </div>
                                 <div id="img_ca6" class="img_categorias_banner"><?php echo $res[0]["post_image"]; ?> </div>
                                 <div class="destaque_caption_ca1">
-                                    <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca6">
-                                    <?php 
-                                    $post_title = $res[0]["post_title"];
-                                    echo substr($post_title ,0, $string_legnth);
-                                    ?> </a> 
+
+                                        <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca6">
+                                            <?php 
+                                            $post_title = $res[0]["post_title"];
+                                            //echo substr($post_title ,0, $string_legnth);
+                                            echo $post_title;
+                                            ?> 
+                                        </a> 
+
                                     <!--
                                     <br>
                                         <span class="glyphicon glyphicon-user"></span>
@@ -240,7 +250,8 @@
                                     <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca7"> 
                                     <?php 
                                     $post_title = $res[0]["post_title"];
-                                    echo substr($post_title ,0, $string_legnth);
+                                    //echo substr($post_title ,0, $string_legnth);
+                                    echo $post_title;
                                     ?> </a>
                                     <!--
                                     <br>
@@ -263,8 +274,8 @@
                                 <div class="destaque_caption_ca1">
                                 <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca7"> <?php 
                                     $post_title = $res[0]["post_title"];
-                                    echo substr($post_title ,0, $string_legnth);
-                                    
+                                    //echo substr($post_title ,0, $string_legnth);
+                                    echo $post_title;
                                     ?> </a>
                                     <!--
                                     <br>

@@ -129,11 +129,10 @@
 .destaque_caption_ca1 {
   overflow: hidden;
   padding: 6px;
-  padding-bottom: 30px;
   margin-top: -81px;
-  width: 319px;
-  height: 80px;
-  margin-top: -81px;
+  width: 319px;    
+  height: 92px;
+  margin-top: -94px;
   position: relative;
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 42%, rgba(0,0,0,0.4) 57%, rgba(0,0,0,0.5) 76%, rgba(0,0,0,0.6) 88%, rgba(0,0,0,0.7) 99%);
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0.3) 42%,rgba(0,0,0,0.4) 57%,rgba(0,0,0,0.5) 76%,rgba(0,0,0,0.6) 88%,rgba(0,0,0,0.7) 99%);
@@ -182,6 +181,9 @@
   color: #ffffff;
   font-size: 17px;
   transition: 0.3s;
+  position: absolute;
+  bottom: 6px;
+  padding: 6px;
 }
 .destaque_caption_ca1 a:hover{
   color: #df0a85;
@@ -189,9 +191,14 @@
 .destaque_caption a{
   text-decoration: none;
   color: #ffffff;
+  transition: 0.3s;
   font-size: 23px;
+  position: absolute;
+  bottom: 6px;
 }
-
+.destaque_caption a:hover{
+  color: #df0a85;
+}
 .destaque_caption_ca1 span{
   color: #ffffff;
   font-size: 10px;
