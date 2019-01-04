@@ -2,23 +2,23 @@
             <ul>
             <?php
                 $args = array( 'numberposts' => '7', 'post_type' => 'post' );
-                $recent_posts = wp_get_recent_posts($args);
+                $recent_posts = iap_get_recent_posts($args);
                 foreach( $recent_posts as $recent ){
                     echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
                     echo get_the_post_thumbnail( $recent["ID"], 'full');
                 }
-                wp_reset_query();
+                iap_reset_query();
             ?>
             </ul>
 
             <?php
                 $args = array( 'numberposts' => '1', 'post_type' => 'post', 'category' => 5705, );
-                $recent_posts = wp_get_recent_posts($args);
+                $recent_posts = iap_get_recent_posts($args);
                 foreach( $recent_posts as $recent ){
                     echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
                     echo get_the_post_thumbnail( $recent["ID"], 'medium');
                 }
-                wp_reset_query();
+                iap_reset_query();
             ?>
             </ul>
 
@@ -43,6 +43,6 @@
                cor fundo gente de arte e +posts  #f9f9f9;
 
 
-              http://arteref.com/wp-admin/edit.php?s=&post_status=all&post_type=post&_wpnonce=85044dd65d&_wp_http_referer=%2Fwp-admin%2Fedit.php&action=-1&m=0&cat=5707&seo_filter=&readability_filter=&filter_action=Filter&paged=1&action2=-1
+              http://arteref.com/wp-admin/edit.php?s=&post_status=all&post_type=post&_wpnonce=85044dd65d&_iap_http_referer=%2Fwp-admin%2Fedit.php&action=-1&m=0&cat=5707&seo_filter=&readability_filter=&filter_action=Filter&paged=1&action2=-1
 
               http://arteref.com/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=5707&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1

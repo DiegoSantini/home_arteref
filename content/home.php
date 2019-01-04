@@ -26,10 +26,14 @@
                                     echo substr($post_title ,0, $string_legnth);
                                     ?>
                                     </a>
+                                    <!-- 
+
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span>Por</span>
-                                    <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                    <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span> 
+                                    
+                                    -->
                                 </div>
                             </a>
                         </div>
@@ -50,10 +54,14 @@
                                         $post_title = $res[0]["post_title"];
                                         echo substr($post_title ,0, $string_legnth);
                                         ?>  </a> 
+                                        <!--
+
                                         <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+
+                                        -->
                                 </div>
                             </a>
                         </div>
@@ -103,10 +111,13 @@
                                             <?php 
                                             $post_title = $dest["post_title"];
                                             echo substr($post_title ,0, 100);
-                                            ?> </a> <br>
+                                            ?> </a> 
+                                            <!--
+                                            <br>
                                             <span class="glyphicon glyphicon-user"></span>
                                             <span>Por</span>
-                                            <span class="destaque_autor"><?php echo $dest["post_autor"]; ?></span>
+                                            <span class="destaque_autor"><?php //echo $dest["post_autor"]; ?></span>
+                                            -->
                                         </div>
                                     </a>
                                 </div>
@@ -130,10 +141,12 @@
                                         echo substr($post_title ,0, $string_legnth);
                                         ?>
                                         </a> 
+                                        <!--
                                         <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                        -->
                                     </div>
                                 </a>
                             </div>
@@ -151,10 +164,12 @@
                                         $post_title = $res[0]["post_title"];
                                         echo substr($post_title ,0, $string_legnth);
                                         ?> </a>
+                                        <!--
                                         <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                        -->
                                     </div>
                                 </a>
                             </div>
@@ -177,10 +192,12 @@
                                     $post_title = $res[0]["post_title"];
                                     echo substr($post_title ,0, $string_legnth);
                                     ?></a>
+                                    <!--
                                     <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                    -->
                                 </div>
                             </a>
                         </div>
@@ -199,10 +216,12 @@
                                     $post_title = $res[0]["post_title"];
                                     echo substr($post_title ,0, $string_legnth);
                                     ?> </a> 
+                                    <!--
                                     <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                    -->
                                 </div>
                             </a>
                         </div>
@@ -223,10 +242,12 @@
                                     $post_title = $res[0]["post_title"];
                                     echo substr($post_title ,0, $string_legnth);
                                     ?> </a>
+                                    <!--
                                     <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                    -->
                                 </div>
                             </a>
                         </div>
@@ -245,10 +266,12 @@
                                     echo substr($post_title ,0, $string_legnth);
                                     
                                     ?> </a>
+                                    <!--
                                     <br>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span>Por</span>
-                                        <span class="destaque_autor"><?php echo $res[0]["post_autor"]; ?></span>
+                                        <span class="destaque_autor"><?php //echo $res[0]["post_autor"]; ?></span>
+                                    -->
                                 </div>
                             </a>
                         </div>
