@@ -23,7 +23,7 @@
                                     <a href="<?php echo $res[0]["post_link"]; ?>" id = "caption_ca1"> 
                                     <?php 
                                     $post_title = $res[0]["post_title"];
-                                    echo substr($post_title ,0, $string_legnth);
+                                    echo $post_title;
                                     ?>
                                     </a>
                                     <!-- 
@@ -318,7 +318,7 @@
                                     <div>
                                         <?php echo $key["post_image"]; ?>
                                         <div class="posts_hoje_caption">
-                                            <spam class="post_hoje_titulo"><?php echo $key["post_title"]; ?></spam> <br>
+                                            <span class="post_hoje_titulo"><?php echo $key["post_title"]; ?></span> <br>
                                             <span class="glyphicon glyphicon-user"></span>
                                             <span class="post_hoje_autor"><?php echo $key["post_autor"]; ?></span>
                                         </div>
@@ -350,7 +350,7 @@
                                 <?php echo $ar_arte_no_mundo[0]["post_image"]; ?> 
                                 
                                 <div class="categoria_posts_caption">
-                                    <spam class="post_hoje_titulo"> <?php echo $ar_arte_no_mundo[0]["post_title"]; ?> </spam> 
+                                    <span class="post_hoje_titulo"> <?php echo $ar_arte_no_mundo[0]["post_title"]; ?> </span> 
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="post_hoje_autor"><?php echo $ar_arte_no_mundo[0]["post_autor"]; ?></span>
@@ -387,7 +387,7 @@
 
                 <div class="categoria_arte_no_mundo col-sm-12">
                     <div class="ar_titulo_div">
-                        <span class="ar_titulo_secao">Opnião</span>
+                        <span class="ar_titulo_secao">Opinião</span>
                     </div>
                     <div>
                         <?php $ar_opniao = home_arteref_get_posts(5709, 4) ?> 
@@ -398,7 +398,7 @@
                                 <?php echo $ar_opniao[0]["post_image"]; ?> 
                                 
                                 <div class="categoria_posts_caption">
-                                    <spam class="post_hoje_titulo"> <?php echo $ar_opniao[0]["post_title"]; ?> </spam> 
+                                    <span class="post_hoje_titulo"> <?php echo $ar_opniao[0]["post_title"]; ?> </span> 
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="post_hoje_autor"><?php echo $ar_opniao[0]["post_autor"]; ?></span>
@@ -467,7 +467,7 @@
                                     <div>
                                         <?php echo $key["post_image"]; ?>
                                         <div class="posts_hoje_caption">
-                                            <spam class="post_hoje_titulo"><?php echo $key["post_title"]; ?></spam> <br>
+                                            <span class="post_hoje_titulo"><?php echo $key["post_title"]; ?></span> <br>
                                             <span class="glyphicon glyphicon-user"></span>
                                             <span class="post_hoje_autor"><?php echo $key["post_autor"]; ?></span>
                                         </div>
@@ -499,7 +499,7 @@
                                 <?php echo $ar_arte_do_dia[0]["post_image"]; ?> 
                                 
                                 <div class="categoria_posts_caption">
-                                    <spam class="post_hoje_titulo"> <?php echo $ar_arte_do_dia[0]["post_title"]; ?> </spam> 
+                                    <span class="post_hoje_titulo"> <?php echo $ar_arte_do_dia[0]["post_title"]; ?>  </span> 
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="post_hoje_autor"><?php echo $ar_arte_do_dia[0]["post_autor"]; ?></span>
@@ -547,7 +547,7 @@
                                 <?php echo $ar_livros[0]["post_image"]; ?> 
                                 
                                 <div class="categoria_posts_caption">
-                                    <spam class="post_hoje_titulo"> <?php echo $ar_livros[0]["post_title"]; ?> </spam> 
+                                    <span class="post_hoje_titulo"> <?php echo $ar_livros[0]["post_title"]; ?> </span> 
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="post_hoje_autor"><?php echo $ar_livros[0]["post_autor"]; ?></span>
@@ -596,7 +596,7 @@
                                 <?php echo $ar_exposicoes[0]["post_image"]; ?> 
                                 
                                 <div class="categoria_posts_caption">
-                                    <spam class="post_hoje_titulo"> <?php echo $ar_exposicoes[0]["post_title"]; ?> </spam> 
+                                    <span class="post_hoje_titulo"> <?php echo $ar_exposicoes[0]["post_title"]; ?> </span> 
                                     <br>
                                     <span class="glyphicon glyphicon-user"></span>
                                     <span class="post_hoje_autor"><?php echo $ar_exposicoes[0]["post_autor"]; ?></span>

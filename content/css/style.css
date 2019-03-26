@@ -115,7 +115,7 @@
   /* Caption text */
   .destaque_caption {
     position: absolute;
-    padding: 6px;
+    padding: 10px;
     overflow: hidden;
     width: 100%;
     margin-top: -100px;
@@ -195,6 +195,8 @@
   font-size: 23px;
   position: absolute;
   bottom: 6px;
+  padding: 10px;
+  line-height: 1.3;
 }
 .destaque_caption a:hover{
   color: #df0a85;
@@ -392,11 +394,6 @@
   }
 }
 
-@media(max-width: 1110px){
-  .destaque_caption a{
-    font-size: 12px;
-  }
-}
 @media (max-width:993px){
   .main_slider_container{
     display: block;
@@ -507,4 +504,14 @@
   .categoria_arte_no_mundo {
     width: 258px;
   }
+}
+.td-header-style-1 .td-header-sp-logo img {
+    max-height: 106px!important;
+}
+.td-header-sp-logo img {
+    margin: unset!important;
+    right: 0!important; 
+}
+.td-header-style-1 .td-header-sp-logo {
+    width: 784px!important;
 }

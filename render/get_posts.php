@@ -37,13 +37,9 @@
         }
         wp_reset_query();
 
-       
-
-
         return $resultado;
     }
     
-
     function home_arteref_get_posts_offset(){
         $args = array( 'numberposts' => 4, 'offset' => 7, 'post_type' => 'post',  'post_status' => 'publish');
         $recent_posts = wp_get_recent_posts($args);
